@@ -8,10 +8,12 @@ library(dplyr)
 library(DT)
 
 shinyUI(
-  navbarPage("Car Selector (mtcars dataset)", 
+  navbarPage("Vehicle Selector (mtcars dataset)", 
     tabPanel("Choose Options",
       sidebarPanel(
-        p("Identify your ideal car by selecting ranges for MPH, HP and Displacement, along with number of cylinders and transmission type:"),
+        h4("Instructions:"),
+        p("Identify your ideal car by selecting ranges for Fuel Efficiency (MPG), Horsepower (HP) and Engine Size (Displacement), along with number of cylinders and transmission type:"),
+        p("Cars matching the values you select below will automatically appear on the right."),
         sliderInput("mpg", "MPG:", min = 10, max = 34, value = c(10, 30)),
         sliderInput("hp", "HP:", min = 50, max = 350, value = c(100, 300)),
         sliderInput("disp", "Displacement (cu in):", min = 70, max = 475, value = c(100, 300)),
