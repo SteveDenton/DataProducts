@@ -8,4 +8,8 @@ And by selecting:
 4) Transmission Type  
 5) Number of Cylinders.  
 
+## GitHub
+The source for this Shiny App can be found on GitHub:
+https://github.com/SteveDenton/DataProducts
+
 Author: Steve Denton
